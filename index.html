@@ -1,0 +1,387 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow" data-podglad>
+<title>IFORCE - ceramika użytkowa: kubki, talerze, filiżanki, wazony | sklep internetowy</title>
+<meta name="description" content="Sklep IFORCE: ceramiczne kubki, talerze, filiżanki, półmiski i wazony. Wysyłka w ciągu 24 h w dni robocze, 14 dni na zwrot, rok gwarancji. Tel. 736 382 120.">
+<meta name="theme-color" content="#23545B">
+<link rel="icon" href="img/znak.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/lexend-rdzen.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" as="image" href="img/p312-800.webp" imagesrcset="img/p312-480.webp 480w, img/p312-800.webp 800w, img/p312-1000.webp 1000w" imagesizes="(max-width:899px) 64vw, 27vw" fetchpriority="high">
+<style>
+@font-face{font-family:Lexend;src:url(fonts/lexend-rdzen.woff2) format("woff2");font-weight:300 700;font-display:swap;unicode-range:U+0020-007E,U+00A0,U+00A9,U+00B0,U+00B7,U+00D3,U+00D7,U+00F3,U+2013,U+2018-2019,U+201C-201E,U+2022,U+2026}
+@font-face{font-family:Lexend;src:url(fonts/lexend-pl.woff2) format("woff2");font-weight:300 700;font-display:swap;unicode-range:U+0104-0107,U+0118-0119,U+0141-0144,U+015A-015B,U+0179-017C}
+/* kolory z logo: morski kwadrat #23545B, czerń napisu, biel */
+:root{--m:#23545B;--m2:#1A4247;--m3:#123236;--cz:#0E1213;--txt:#2A3233;--mut:#5C6768;--szary:#F2F4F5;--linia:#DDE2E3;--top:72px;
+--wrap:min(92vw,1640px);--f:Lexend,system-ui,"Segoe UI",Arial,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--top)}
+body{margin:0;background:#fff;color:var(--txt);font:300 16.5px/1.6 var(--f);overflow-x:hidden}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--m)}
+h1,h2,h3{color:var(--cz);font-weight:600;line-height:1.15;margin:0 0 .5em;letter-spacing:-.01em}
+h2{font-size:clamp(1.7rem,1.1rem + 1.8vw,2.7rem)}
+h3{font-size:1.15rem;font-weight:500}
+p{margin:0 0 1em}
+strong{font-weight:500}
+.wrap{width:var(--wrap);margin:0 auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6em;min-height:52px;padding:12px 26px;background:var(--cz);color:#fff;border:2px solid var(--cz);font:500 1rem/1.2 var(--f);text-decoration:none;cursor:pointer;transition:background .2s,color .2s,border-color .2s}
+.btn::before{content:"";width:10px;height:10px;background:currentColor;flex:none}
+.btn:hover{background:#fff;color:var(--cz)}
+.btn-bialy{background:#fff;color:var(--cz);border-color:#fff}
+.btn-bialy:hover{background:transparent;color:#fff}
+.btn-obrys{background:transparent;color:#fff;border-color:rgba(255,255,255,.7)}
+.btn-obrys::before{display:none}
+.btn-obrys:hover{background:#fff;color:var(--m);border-color:#fff}
+
+/* naglowek */
+.top{position:sticky;top:0;z-index:40;background:#fff;border-bottom:1px solid var(--linia)}
+.top-in{width:var(--wrap);margin:0 auto;height:var(--top);display:flex;align-items:center;gap:28px}
+.logo{display:block;flex:none;line-height:0;color:var(--cz)}
+.logo svg{height:34px;width:auto}
+.menu{display:flex;gap:4px;margin:0 auto 0 12px;padding:0;list-style:none}
+.menu a{display:block;padding:10px 14px;color:var(--cz);text-decoration:none;font-weight:400;font-size:.98rem;position:relative}
+.menu a::after{content:"";position:absolute;left:14px;right:14px;bottom:4px;height:3px;background:var(--m);transform:scaleX(0);transform-origin:left;transition:transform .2s}
+.menu a:hover::after,.menu a[aria-current]::after{transform:scaleX(1)}
+.top-tel{color:var(--cz);text-decoration:none;font-weight:500;white-space:nowrap;display:flex;align-items:center;gap:8px}
+.top-tel svg,.koszyk svg{width:22px;height:22px}
+.koszyk{position:relative;display:flex;align-items:center;justify-content:center;width:46px;height:46px;color:var(--cz);text-decoration:none}
+.koszyk b{position:absolute;top:3px;right:0;min-width:19px;height:19px;padding:0 4px;background:var(--m);color:#fff;font-size:.72rem;font-weight:500;display:flex;align-items:center;justify-content:center}
+.hamb{display:none;width:46px;height:46px;border:0;background:none;padding:12px 10px;cursor:pointer}
+.hamb span{display:block;height:2px;background:var(--cz);margin:5px 0}
+.mob-menu{display:none}
+
+/* pierwszy ekran: morski kwadrat z logo + kwadraty z ceramiką */
+.hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);min-height:calc(100svh - var(--top));background:var(--m)}
+.hero-tekst{display:flex;flex-direction:column;justify-content:center;padding:clamp(40px,6vw,110px) clamp(24px,5vw,120px) clamp(40px,6vw,110px) max(4vw,calc((100vw - 1640px)/2))}
+.hero h1{color:#fff;font-size:clamp(2.2rem,1rem + 3.6vw,5rem);font-weight:600;max-width:12ch;margin-bottom:.45em}
+.hero .lead{color:#E3EEEF;font-size:clamp(1.05rem,.9rem + .5vw,1.35rem);max-width:34ch;margin:0 0 34px}
+.hero-btny{display:flex;flex-wrap:wrap;gap:12px}
+@media (min-width:900px){.hero-btny .btn{min-height:60px;padding:14px 32px;font-size:1.08rem}}
+.hero-info{margin:38px 0 0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:10px 28px;color:#CFE0E2;font-size:.95rem}
+.hero-info li{display:flex;align-items:center;gap:10px}
+.hero-info li::before{content:"";width:8px;height:8px;background:#fff}
+.mozaika{display:grid;grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr;gap:4px;background:var(--m)}
+.mozaika a{position:relative;overflow:hidden;display:block;min-height:0}
+.mozaika img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.mozaika a:hover img{transform:scale(1.03)}
+.mozaika span{position:absolute;left:0;bottom:0;background:#fff;color:var(--cz);font-weight:500;font-size:.95rem;padding:9px 16px}
+
+/* sekcje */
+.sekcja{padding:clamp(64px,8vw,120px) 0}
+.szara{background:var(--szary)}
+.glowa{display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px 40px;margin-bottom:36px}
+.glowa h2{margin:0}
+.glowa p{margin:0;max-width:46ch;color:var(--mut)}
+
+/* kategorie */
+.kat{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:16px}
+.kat a{display:block;text-decoration:none;color:var(--cz)}
+.kat .foto{aspect-ratio:1;overflow:hidden;background:var(--szary)}
+.kat img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.kat a:hover img{transform:scale(1.04)}
+.kat h3{display:flex;align-items:center;gap:10px;margin:14px 0 2px;font-size:1.2rem}
+.kat h3::before{content:"";width:12px;height:12px;background:var(--m)}
+.kat small{color:var(--mut);font-size:.9rem}
+
+/* produkty */
+.filtr{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 28px}
+.filtr button{font:400 .95rem var(--f);padding:10px 18px;border:1px solid var(--linia);background:#fff;color:var(--cz);cursor:pointer}
+.filtr button[aria-pressed=true]{background:var(--m);border-color:var(--m);color:#fff}
+.prod{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:28px 20px}
+.karta{display:flex;flex-direction:column;background:#fff}
+.karta[hidden]{display:none}
+.karta .foto{aspect-ratio:1;overflow:hidden;background:var(--szary)}
+.karta img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.karta:hover img{transform:scale(1.04)}
+.karta-in{padding:16px 18px 18px;display:flex;flex-direction:column;flex:1}
+.karta h3{margin:0 0 4px}
+.karta .opis{color:var(--mut);font-size:.92rem;line-height:1.5;margin:0 0 14px}
+.karta .dol{margin-top:auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.cena{font-size:1.3rem;font-weight:600;color:var(--cz)}
+.dodaj{font:500 .92rem var(--f);min-height:44px;padding:8px 16px;border:2px solid var(--cz);background:#fff;color:var(--cz);cursor:pointer;transition:background .2s,color .2s}
+.dodaj:hover,.dodaj.ok{background:var(--cz);color:#fff}
+
+/* zakupy - ciemna sekcja */
+.zakupy{background:var(--m3);color:#D5E3E5}
+.zakupy h2{color:#fff}
+.zakupy .glowa p{color:#B8CDD0}
+.trzy{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2px;background:rgba(255,255,255,.12)}
+.trzy div{background:var(--m3);padding:34px 30px 30px 0}
+.trzy div+div{padding-left:30px}
+.trzy b{display:block;color:#fff;font-size:clamp(1.6rem,1rem + 1.6vw,2.4rem);font-weight:600;line-height:1.1;margin-bottom:10px}
+.trzy b::before{content:"";display:block;width:16px;height:16px;background:#fff;margin-bottom:22px}
+.trzy p{margin:0;max-width:34ch}
+
+/* o ceramice */
+.o{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,6vw,110px);align-items:center}
+.o-foto{display:grid;grid-template-columns:1fr 1fr;gap:4px}
+.o-foto img{aspect-ratio:1;object-fit:cover;width:100%}
+.o-foto img:first-child{grid-column:1/3;aspect-ratio:2/1}
+.o ul{margin:0 0 28px;padding:0;list-style:none}
+.o li{display:flex;gap:14px;padding:12px 0;border-top:1px solid var(--linia)}
+.o li::before{content:"";flex:none;width:10px;height:10px;margin-top:.55em;background:var(--m)}
+
+/* kontakt */
+.kontakt{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,90px)}
+.dane a{color:var(--cz);text-decoration:none;font-size:clamp(1.3rem,1rem + 1vw,1.9rem);font-weight:500;display:inline-block;margin:0 0 6px}
+.dane a:hover{color:var(--m)}
+.dane .mut{color:var(--mut)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:flex;flex-direction:column;gap:6px;font-size:.92rem;color:var(--mut)}
+label.cala{grid-column:1/3}
+input,textarea{font:300 1rem var(--f);padding:13px 14px;border:1px solid #C9D1D2;background:#fff;color:var(--cz);width:100%}
+input:focus,textarea:focus{outline:2px solid var(--m);outline-offset:0;border-color:var(--m)}
+textarea{min-height:130px;resize:vertical}
+form .btn{justify-self:start}
+.form-ok{grid-column:1/3;margin:0;color:var(--m);font-weight:500}
+
+/* stopka */
+.stopka{background:var(--cz);color:#B9C2C3;padding:64px 0 28px;font-size:.95rem}
+.stopka-in{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.stopka h3{color:#fff;font-size:1rem;margin:0 0 14px}
+.stopka ul{list-style:none;margin:0;padding:0}
+.stopka li{margin:0 0 8px}
+.stopka a{color:#B9C2C3;text-decoration:none}
+.stopka a:hover{color:#fff}
+.stopka .logo svg{height:30px;margin-bottom:16px}
+.stopka-dol{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;border-top:1px solid #2A3233;margin-top:44px;padding-top:22px}
+
+/* pasek na telefonie po przewinieciu */
+.mob{display:none}
+
+@media (max-width:1180px){
+ .menu{display:none}
+ .hamb{display:block;margin-left:-8px}
+ .top-in{gap:10px}
+ .logo{margin-right:auto}
+ .mob-menu{position:fixed;inset:var(--top) 0 0 0;background:#fff;z-index:39;padding:20px 6vw;overflow:auto}
+ .mob-menu.otw{display:block}
+ .mob-menu a{display:flex;align-items:center;gap:14px;padding:16px 0;border-bottom:1px solid var(--linia);color:var(--cz);text-decoration:none;font-size:1.25rem;font-weight:400}
+ .mob-menu a::before{content:"";width:10px;height:10px;background:var(--m)}
+ .kat{grid-template-columns:repeat(5,minmax(200px,1fr));overflow-x:auto;scroll-snap-type:x mandatory;padding-bottom:10px}
+ .kat a{scroll-snap-align:start}
+}
+@media (max-width:899px){
+ :root{--top:62px}
+ .logo svg{height:28px}
+ .top-tel span{display:none}
+ .hero{grid-template-columns:1fr;grid-template-rows:minmax(0,1fr) auto;min-height:calc(100svh - var(--top))}
+ .mozaika{order:-1;min-height:min(46vw,24svh)}
+ .mozaika span{font-size:.82rem;padding:6px 10px}
+ .hero-tekst{padding:22px 5vw 24px}
+ .hero h1{font-size:clamp(1.75rem,1.1rem + 4.6vw,2.6rem);max-width:15ch}
+ .hero .lead{font-size:1rem;margin-bottom:26px}
+ .hero-info{margin-top:20px;font-size:.88rem;gap:6px 18px}
+ .btn{min-height:50px;padding:10px 20px}
+ .trzy{grid-template-columns:1fr}
+ .trzy div,.trzy div+div{padding:28px 0}
+ .o,.kontakt{grid-template-columns:1fr}
+ .stopka-in{grid-template-columns:1fr 1fr}
+ .stopka-in>div:first-child{grid-column:1/3}
+ .prod{grid-template-columns:repeat(2,minmax(0,1fr));gap:22px 12px}
+ .karta-in{padding:12px 2px 4px}
+ .karta .opis{display:none}
+ .karta .dol{flex-direction:column;align-items:stretch;gap:8px}
+ .cena{font-size:1.1rem}
+ .filtr{flex-wrap:nowrap;overflow-x:auto}
+ .filtr button{flex:none}
+ form{grid-template-columns:1fr}
+ label.cala,.form-ok{grid-column:1}
+ .mob{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;transform:translateY(100%);transition:transform .25s}
+ .mob.widac{transform:none}
+ .mob a{display:flex;align-items:center;justify-content:center;min-height:54px;text-decoration:none;font-weight:500;color:#fff;background:var(--cz)}
+ .mob a+a{background:var(--m)}
+ body{padding-bottom:0}
+}
+@media (max-width:899px) and (max-height:600px){
+ .hero .lead{margin-bottom:24px}
+ .hero-info{display:none}
+}
+@media (min-width:1900px){
+ .prod{grid-template-columns:repeat(5,minmax(0,1fr))}
+}
+@media (min-width:2200px){.hero h1{font-size:6.2rem;max-width:14ch}.mozaika span{font-size:1.15rem;padding:12px 20px}.hero .lead{font-size:1.65rem}.hero-btny .btn{min-height:70px;padding:16px 40px;font-size:1.25rem}.hero-info{font-size:1.15rem}:root{--top:84px}.logo svg{height:40px}.menu a,.top-tel{font-size:1.08rem}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+
+.wylinka-badge{display:inline-flex;align-items:center;gap:.4em;color:inherit;text-decoration:none;font-size:.875em;line-height:1;opacity:.85}
+.wylinka-badge:hover,.wylinka-badge:focus-visible{opacity:1}
+.wylinka-badge:focus-visible{outline:2px solid currentColor;outline-offset:3px;border-radius:2px}
+.wylinka-badge svg{width:18px;height:18px;flex:none;overflow:visible}
+.wylinka-badge b{font-weight:600}
+.wylinka-badge .wy-old{opacity:.45;transform-origin:40px 30px;transition:transform .32s cubic-bezier(.3,.7,.4,1),opacity .32s ease-out}
+.wylinka-badge .wy-pod{opacity:0;transition:opacity .2s ease-out .08s}
+.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:translate(9px,7px) rotate(9deg);opacity:0}
+.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:1}
+@media (prefers-reduced-motion:reduce){.wylinka-badge .wy-old,.wylinka-badge .wy-pod{transition:none}.wylinka-badge:hover .wy-old,.wylinka-badge:focus-visible .wy-old{transform:none;opacity:.45}.wylinka-badge:hover .wy-pod,.wylinka-badge:focus-visible .wy-pod{opacity:0}}
+</style>
+</head>
+<body>
+<header class="top">
+ <div class="top-in">
+  <button class="hamb" aria-label="Menu" aria-expanded="false" aria-controls="mobmenu"><span></span><span></span><span></span></button>
+  <a class="logo" href="#" aria-label="IFORCE - strona główna"><svg viewBox="0 0 290 40" role="img" aria-hidden="true"><rect x="0" y="2" width="36" height="36" fill="#23545B"/><text x="46" y="36" font-family="Lexend,Arial,sans-serif" font-weight="700" font-size="44" letter-spacing="1" fill="currentColor">IFORCE</text></svg></a>
+  <ul class="menu">
+   <li><a href="#produkty" data-k="kubki">Kubki</a></li>
+   <li><a href="#produkty" data-k="talerze">Talerze</a></li>
+   <li><a href="#produkty" data-k="filizanki">Filiżanki</a></li>
+   <li><a href="#produkty" data-k="polmiski">Półmiski i miski</a></li>
+   <li><a href="#produkty" data-k="wazony">Wazony</a></li>
+   <li><a href="#zakupy">Dostawa i zwroty</a></li>
+   <li><a href="#kontakt">Kontakt</a></li>
+  </ul>
+  <a class="top-tel" href="tel:+48736382120"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></svg><span>736 382 120</span></a>
+  <a class="koszyk" href="#produkty" aria-label="Koszyk"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M4 8h16l-1.5 12h-13z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/></svg><b id="licznik">0</b></a>
+ </div>
+</header>
+<nav class="mob-menu" id="mobmenu" aria-label="Menu">
+ <a href="#produkty" data-k="kubki">Kubki</a>
+ <a href="#produkty" data-k="talerze">Talerze</a>
+ <a href="#produkty" data-k="filizanki">Filiżanki</a>
+ <a href="#produkty" data-k="polmiski">Półmiski i miski</a>
+ <a href="#produkty" data-k="wazony">Wazony</a>
+ <a href="#zakupy">Dostawa i zwroty</a>
+ <a href="#kontakt">Kontakt</a>
+</nav>
+
+<main>
+<section class="hero">
+ <div class="hero-tekst">
+  <h1>Ceramika użytkowa w prostej formie</h1>
+  <p class="lead">Kubki, talerze, filiżanki, półmiski i wazony do codziennego stołu. Wysyłka w ciągu 24&nbsp;h w dni robocze.</p>
+  <div class="hero-btny" id="heroBtny">
+   <a class="btn btn-bialy" href="#produkty">Zobacz ceramikę</a>
+   <a class="btn btn-obrys" href="#kontakt">Kontakt</a>
+  </div>
+  <ul class="hero-info">
+   <li>14 dni na zwrot</li>
+   <li>Rok gwarancji</li>
+  </ul>
+ </div>
+ <div class="mozaika">
+  <a href="#produkty" data-k="kubki"><img src="img/p312-800.webp" srcset="img/p312-480.webp 480w, img/p312-800.webp 800w, img/p312-1000.webp 1000w" sizes="(max-width:899px) 64vw, 27vw" width="1000" height="970" alt="Różowy kubek ceramiczny na lnianej serwecie" fetchpriority="high"><span>Kubki</span></a>
+  <a href="#produkty" data-k="talerze"><img src="img/p302-800.webp" srcset="img/p302-480.webp 480w, img/p302-800.webp 800w, img/p302-1000.webp 1000w" sizes="(max-width:899px) 64vw, 27vw" width="1000" height="967" alt="Talerz z turkusowym szkliwem"><span>Talerze</span></a>
+  <a href="#produkty" data-k="wazony"><img src="img/p310-800.webp" srcset="img/p310-480.webp 480w, img/p310-800.webp 800w, img/p310-1000.webp 1000w" sizes="(max-width:899px) 64vw, 27vw" width="1000" height="970" alt="Biały wazon ceramiczny z suchymi kwiatami"><span>Wazony</span></a>
+  <a href="#produkty" data-k="filizanki"><img src="img/p301-800.webp" srcset="img/p301-480.webp 480w, img/p301-800.webp 800w, img/p301-1000.webp 1000w" sizes="(max-width:899px) 64vw, 27vw" width="1000" height="970" alt="Filiżanka do kawy ze spodkiem"><span>Filiżanki</span></a>
+ </div>
+</section>
+
+<section class="sekcja" id="kategorie">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Wybierz, czego szukasz</h2>
+   <p>Pięć działów, w każdym zdjęcia, wymiary i cena od razu na liście.</p>
+  </div>
+  <div class="kat">
+   <a href="#produkty" data-k="kubki"><div class="foto"><img src="img/p305-480.webp" width="480" height="466" loading="lazy" alt="Kubek 220 ml z jasnym szkliwem"></div><h3>Kubki</h3><small>190 ml, 220 ml i klasyczne</small></a>
+   <a href="#produkty" data-k="talerze"><div class="foto"><img src="img/p311-480.webp" width="480" height="466" loading="lazy" alt="Talerz 23 cm"></div><h3>Talerze</h3><small>12, 14 i 23 cm</small></a>
+   <a href="#produkty" data-k="filizanki"><div class="foto"><img src="img/p301-480.webp" width="480" height="466" loading="lazy" alt="Filiżanka do kawy ze spodkiem"></div><h3>Filiżanki</h3><small>do kawy, ze spodkiem</small></a>
+   <a href="#produkty" data-k="polmiski"><div class="foto"><img src="img/p313-480.webp" width="480" height="466" loading="lazy" alt="Talerz w kształcie kwiatu"></div><h3>Półmiski i miski</h3><small>do podawania i na co dzień</small></a>
+   <a href="#produkty" data-k="wazony"><div class="foto"><img src="img/p303-480.webp" width="480" height="464" loading="lazy" alt="Szklany wazon z gipsówką"></div><h3>Wazony</h3><small>ceramiczne i szklane</small></a>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja szara" id="produkty">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Wszystkie produkty</h2>
+   <p>Ceny brutto, przy każdym produkcie zdjęcie, opis i dostępność. Do koszyka jednym kliknięciem.</p>
+  </div>
+  <div class="filtr" role="group" aria-label="Filtr kategorii">
+   <button type="button" data-f="wszystko" aria-pressed="true">Wszystko</button>
+   <button type="button" data-f="kubki" aria-pressed="false">Kubki</button>
+   <button type="button" data-f="talerze" aria-pressed="false">Talerze</button>
+   <button type="button" data-f="filizanki" aria-pressed="false">Filiżanki</button>
+   <button type="button" data-f="polmiski" aria-pressed="false">Półmiski i miski</button>
+   <button type="button" data-f="wazony" aria-pressed="false">Wazony</button>
+  </div>
+  <div class="prod" id="lista"></div>
+ </div>
+</section>
+
+<section class="sekcja zakupy" id="zakupy">
+ <div class="wrap">
+  <div class="glowa">
+   <h2>Zakupy bez niespodzianek</h2>
+   <p>Najważniejsze zasady widać od razu, a pełny regulamin, koszty dostawy i formularz zwrotu są w stopce.</p>
+  </div>
+  <div class="trzy">
+   <div><b>Wysyłka w 24 h</b><p>Produkty wysyłamy w ciągu 24 godzin w dni robocze.</p></div>
+   <div><b>14 dni na zwrot</b><p>Masz 14 dni na sprawdzenie produktu. W tym czasie możesz go zwrócić i otrzymać zwrot wpłaconej kwoty.</p></div>
+   <div><b>Rok gwarancji</b><p>Każdy produkt jest objęty roczną gwarancją.</p></div>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja" id="o-nas">
+ <div class="wrap o">
+  <div class="o-foto">
+   <img src="img/p306-800.webp" srcset="img/p306-800.webp 800w, img/p306-1000.webp 1000w" sizes="(max-width:899px) 92vw, 46vw" width="1000" height="970" loading="lazy" alt="Ciemny kubek 190 ml na lnianej serwecie">
+   <img src="img/p308-480.webp" width="480" height="466" loading="lazy" alt="Kubek 220 ml w pastelowe pasy">
+   <img src="img/p304-480.webp" width="480" height="466" loading="lazy" alt="Talerz 12 cm z kremowym szkliwem">
+  </div>
+  <div>
+   <h2>Prosta forma, która pracuje na co dzień</h2>
+   <p>Kubek, z którego pije się poranną kawę, talerz na obiad, wazon na kwiaty z ogrodu. Wybieramy ceramikę, która dobrze wygląda na stole i dobrze znosi codzienne używanie.</p>
+   <ul>
+    <li>Ręcznie robione kubki: 190 ml, 220 ml i klasyczne</li>
+    <li>Talerze w trzech średnicach: 12, 14 i 23 cm</li>
+    <li>Wazony do kwiatów ciętych, suchych bukietów i aranżacji wnętrz</li>
+   </ul>
+   <a class="btn" href="#produkty">Przejdź do produktów</a>
+  </div>
+ </div>
+</section>
+
+<section class="sekcja szara" id="kontakt">
+ <div class="wrap kontakt">
+  <div class="dane">
+   <h2>Kontakt</h2>
+   <p class="mut">Pytanie o produkt, większe zamówienie albo prezent dla firmy? Najszybciej telefonicznie lub mailowo.</p>
+   <a href="tel:+48736382120">736 382 120</a><br>
+   <a href="mailto:office@iforce.pl">office@iforce.pl</a>
+  </div>
+  <form id="formularz" novalidate>
+   <label>Imię<input name="imie" autocomplete="name" required></label>
+   <label>E-mail lub telefon<input name="kontakt" autocomplete="email" required></label>
+   <label class="cala">Wiadomość<textarea name="tresc" required placeholder="Np. pytanie o zestaw kubków"></textarea></label>
+   <button class="btn" type="submit">Wyślij wiadomość</button>
+  </form>
+ </div>
+</section>
+</main>
+
+<footer class="stopka">
+ <div class="wrap">
+  <div class="stopka-in">
+   <div>
+    <span class="logo"><svg viewBox="0 0 290 40" aria-hidden="true"><rect x="0" y="2" width="36" height="36" fill="#3E8A94"/><text x="46" y="36" font-family="Lexend,Arial,sans-serif" font-weight="700" font-size="44" letter-spacing="1" fill="#fff">IFORCE</text></svg></span>
+    <p>Ceramika użytkowa: kubki, talerze, filiżanki, półmiski i wazony.</p>
+   </div>
+   <div>
+    <h3>Sklep</h3>
+    <ul><li><a href="#produkty">Kubki</a></li><li><a href="#produkty">Talerze</a></li><li><a href="#produkty">Filiżanki</a></li><li><a href="#produkty">Półmiski i miski</a></li><li><a href="#produkty">Wazony</a></li></ul>
+   </div>
+   <div>
+    <h3>Zamówienie</h3>
+    <ul><li><a href="#zakupy">Regulamin</a></li><li><a href="#zakupy">Koszty i sposoby dostawy</a></li><li><a href="#zakupy">Sposoby płatności</a></li><li><a href="#zakupy">Zwroty i reklamacje</a></li><li><a href="#zakupy">Polityka prywatności</a></li></ul>
+   </div>
+   <div>
+    <h3>Kontakt</h3>
+    <ul><li><a href="tel:+48736382120">736 382 120</a></li><li><a href="mailto:office@iforce.pl">office@iforce.pl</a></li></ul>
+   </div>
+  </div>
+  <div class="stopka-dol">
+   <span>© 2026 IFORCE</span>
+   <a class="wylinka-badge" href="https://wylinka.pl/?utm_source=iforce.pl&amp;utm_medium=stopka&amp;utm_campaign=wykonanie" rel="noopener" title="Strona wykonana przez Wylinka"><svg viewBox="0 0 64 64" aria-hidden="true" focusable="false" fill="currentColor"><path d="M9.8 22.8l-1.2-7.9 2.2-3.7 15.5 4.6-.5 1.5-7.2 5.5 4.7 15.6 5-15.6 7 0 4.1 12.7-4.2-.9-2.6 1.8-.8-2.2-5.3 15.6-4.3 0 .4 .2-2.1 2.8-1.3-1.1 1.1-1.4-3.1 .2-.1-1.7 2.2-.1-5.7-16.5-4.8 .6-.8 3.1 0 .5-.3 .5 .8 2.2-1.6 .5-.4-1.3-.8 1.6-1.5-.8 .8-1.6-1.4 .6-.6-1.6 2.3-.8 .2-.4 1.3-4.8 5.9-.8-2.4-6.9zM15.2 13.7l-.1-.4-.4 .8-.1 .8 .1 1 .1 .4 .3 .7 .3-.9 .1-.7 0-.8z"/><path class="wy-pod" d="M37.1 49.8l-4.5-13.3 2.6-1.8 4.2 .9 .9 2.8 3-9.7 0-.5 .1-.8 3.2-8.4 .5-1 .6-1 .9-1.1 1.3-1 1.1-.7 1.4-.5 1.4-.3 .7 0 .9 0 1.2 .3 1.4 .6 .8 .5 .7 .7 .6 .7 .5 .9 .3 .9 .1 .9 0 .8-.2 .9-.5 .9-.5 .6-.7 .5-.7 .3-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.6-.1-.6-.3-.7-.4-.5-.4-.4-.5-.3-.6-.3-.7 0-.7 .1-.6 .1-.5 .4-.5 .5-.3 .5-.2 .7-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1-2.1-2.8 .4-.2z"/><path class="wy-old" d="M40.8 50l.4-.2-4.1 0-4.2-12.5 2.5-1.7 4.3 .9 .6 1.9 .6-1.6 0-.3 2.4-7.8 0-.5 .1-.8 3.2-8.4 .4-.8 .6-.9 .9-1.2 .9-.9 1.3-.8 1.4-.6 1.2-.3 1.4-.1 1.3 .1 .6 .2 .8 .3 1.1 .6 .9 .7 .7 .9 .5 .9 .3 .9 .1 1.1-.1 .9-.3 .9-.4 .7-.6 .7-.6 .4-.6 .2-.1-.1 0-.1 .5-.5 .3-.7 .2-.5 0-.5-.1-.6-.2-.6-.3-.5-.4-.5-.5-.3-.6-.3-.7-.1-.6 0-.6 .1-.6 .3-.6 .5-.3 .4-.2 .5-.1 .5-.1 1.5-1.4 5.1-.8 3.3-.3 .7-.5 .7-6 17.5 1.9 .1-.1 1.7-3.1-.2 1.1 1.4-1.3 1.1zM49.6 17.1l.6 1.7-1.5 1.9 .4 .4 1.8-2.1-.7-2.1zM48.1 28.3l.5 1.8-1.7 1.8 .4 .4 1.9-2-.6-2.2zM37.9 41.7l1.7-1.5-.4-.4-1.7 1.4zM42.6 38.7l-1.5 2.8 1.1 2-1.3 2.6 .5 .2 1.5-2.8-1.1-2 1.4-2.5z"/></svg><span>wykonanie: <b>Wylinka</b></span></a>
+  </div>
+ </div>
+</footer>
+
+<div class="mob" id="mob"><a href="tel:+48736382120">Zadzwoń</a><a href="#produkty">Produkty</a></div>
+<script src="app.js" defer></script>
+</body>
+</html>
